@@ -18,8 +18,14 @@ curl --location --request POST 'https://api.juspay.in/payout/merchant/v1/orders'
                 },
                 "type": "ACCOUNT_IFSC"
             },
+            "udf1":"udf1",
+            "udf2":"udf2",
+            "udf3":"udf3",
+            "udf4":"udf4",
+            "udf5":"udf5",
             "additionalInfo": {
-                "remark":"Payout Transaction"
+                "remark":"Payout Transaction",
+                "isRetriable": false
             }
         }
     ],
