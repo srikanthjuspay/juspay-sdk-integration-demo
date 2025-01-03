@@ -1,11 +1,9 @@
-curl -X POST https://smartgateway.hdfcbank.com/customers\
--u your_api_key:\
--H 'x-merchantid: merchant_id'\
--H 'Content-Type: application/x-www-form-urlencoded'\
--d "object_reference_id=customer@gmail.com"\
--d "mobile_number=9988776655"\    
--d "email_address=customer@gmail.com"\
--d "first_name=John"\
--d "last_name=Smith"\
--d "mobile_country_code=91"\
--d"options.get_client_auth_token=true"\
+curl --location 'https://smartgatewayuat.hdfcbank.com/customers' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'x-merchantid:<merchant_id>’ \
+--header 'Authorization: Basic <api key in base64 format>' \
+--data-urlencode 'object_reference_id=ABC23' \
+--data-urlencode 'mobile_number=7013486500' \
+--data-urlencode 'email_address=test@gmail.com' \
+--data-urlencode 'first_name=customerfirstname' \
+--data-urlencode 'last_name=lastname'
